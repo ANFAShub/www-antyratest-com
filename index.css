@@ -1,0 +1,251 @@
+/* section1 */
+.section1 {
+    position: relative; 
+    width: 100%; 
+    height: 700px; /* Height of the shape */
+    background-image: url('images/landing-header-desktop.jpg'); /* Background image */
+    background-size: cover; /* Make sure the background image covers the entire shape */
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%); /* Define the parallelogram shape */
+}
+
+nav {
+    z-index: 1; /* Ensure the nav appears above the background image */
+    display: flex;
+    padding: 40px 0px 0px 70px;
+    font-family: 'Rubik';
+}
+
+nav img {
+    width: 100px;
+    height: 20px;
+}
+
+nav p {
+    color: aliceblue;
+    margin-left: 60%;
+}
+
+.call-nav {
+    color: #ff85a5;
+    margin-right: 10px;
+}
+
+.we-design {
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-size: small;
+    color: aliceblue;
+}
+
+.header {
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    font-size: x-large;
+    color: aliceblue;
+    font-weight: 550;
+}
+
+.header span {
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    font-size: larger;
+    color: #2dc6ff;
+    font-weight: 550;
+}
+
+.head {
+    position: absolute; /* Position the heading element absolutely */
+    top: 50%; /* Align the heading vertically in the middle */
+    left: 50%; /* Align the heading horizontally in the middle */
+    transform: translate(-50%, -50%); /* Center the heading */
+    z-index: 1; /* Ensure the heading appears above the background image */
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    font-size: medium;
+    color: aliceblue;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.request {
+    position: absolute; /* Position the request section absolutely */
+    top: 90%; /* Center the request section vertically */
+    left: 50%; /* Center the request section horizontally */
+    transform: translate(-50%, -50%); /* Center the request section */
+    z-index: 1; /* Ensure the request section appears above the background image */
+    height: 70px;
+    width: 500px;
+    background-color: #00a3e8;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */;
+    color: aliceblue;
+    gap: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.request-btn {
+    background-color: #ff7363;
+    border: none;
+    height: 30px;
+    color: aliceblue;
+    margin-top: 1px;
+}
+
+.request span {
+    font-weight: 600;
+}
+
+.request p {
+    padding-top: 10px;
+}
+
+.section2 {
+    margin: 50px 0px 50px 250px;
+    width: 800px; 
+    text-align: justify; 
+    text-align: center;
+}
+
+.dark {
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: 200;
+    color: black;
+}
+
+.dark span {
+    font-family: 'Rubik', sans-serif;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: 600;
+    color: black;
+}
+
+.what-we-do {
+    font-family: 'roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: xx-small;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.para {   
+    font-family: 'roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 200;
+    color: black;
+}
+
+.cards-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+}
+
+.card {
+    flex: 0 0 calc(33.33% - 20px);
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Hide the overflowing content */
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    flex: 1; /* Allow the content to grow and fill the available space */
+    text-align: center;
+}
+
+.card-content h2 {
+    color: #000;
+}
+
+.card-content p {
+    color: #000;
+}
+
+.card::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #00a3e8; /* Blue background color */
+    z-index: -1; /* Send it behind the card content */
+}
+
+.form {
+    width: 800px;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 30px;
+    width: 100%; 
+    height: 350px;
+     /* Height of the shape */
+    background-color: #1c2027;
+    clip-path: polygon(0% 40%, 100% 0%, 100% 100%, 0% 100%); /* Define the parallelogram shape */
+    justify-content: center;
+    z-index: 0;
+}
+
+footer img {
+    margin-top: 100px;
+    padding: 20px;
+}
+.foot-content {
+    justify-content: center;
+    margin-left: 500px;
+    color: #b8b9bb;
+}
+
+.fa {
+    padding: 2px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 0.5px;
+    color: #b8b9bb;
+}
+  
+/* .end-part {
+    display: flex;
+    color: #b8b9bb;
+    justify-content: center;
+    gap: 200px;
+} */
+ 
+.end-part {
+    display: flex;
+    color: #b8b9bb;
+    justify-content: center;
+    gap: 200px;
+    margin-bottom: 2px !important; /* Add bottom margin */
+}
+
